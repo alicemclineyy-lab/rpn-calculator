@@ -9,10 +9,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Install dependencies
+    - name: Install basic dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y cmake g++ libgtest-dev
+        sudo apt-get install -y build-essential cmake
 
     - name: Configure and Build
       run: |
